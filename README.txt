@@ -9,7 +9,7 @@ Motituspeli is a strategy game inspired by the DOS game
 "Motti - The Game" by Pasi Fränti and Timo Kaukoranta [1].
 The game is intended for VTech Laser 2001 and Salora Manager
 home computers [2], but the current version also works with
-PC-BASIC [3] and QB64 [4].
+PC-BASIC [3] and should work with QB64 [4] with minimal changes.
 
 The goal of the game is to conquer territy and prevent
 the oppising player from making a move. The player's
