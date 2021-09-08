@@ -21,6 +21,19 @@
 220 P% = 1
 230 VP% = 2
 
+300 REM Main menu =====================
+310 PRINT
+320 FOR M = 1 TO N%
+330 PRINT SPC(4) M " - " NAMES$(M) " (" SIZES%(M,1) "x" SIZES%(M,2) ")"
+340 NEXT M
+350 PRINT SPC(4) "0 - Lopetus"
+360 PRINT:PRINT "Valitse kartta";
+370 INPUT S%
+380 IF S% = 0 THEN END
+390 W% = SIZES%(S%,1):H% = SIZES%(S%,2)
+400 FOR ROW = 1 TO W%: FOR COL = 1 TO H%
+410 MAP%(COL,ROW) = MD%(S%, COL,ROW)
+420 NEXT COL: NEXT ROW
 
 500 REM Main loop =====================
 510 GOSUB 8000
@@ -40,7 +53,7 @@
 660 NEXT Y
 670 GOSUB 8000
 680 PRINT "Pelaaja " VP% " voitti pelin!"
-690 END
+690 GOTO 300
 
 
 1000 REM Check coordinates ============
@@ -80,15 +93,6 @@
 9090 READ MD%(M,COL,ROW)
 9100 NEXT COL: NEXT ROW
 9110 NEXT M
-9120 FOR M = 1 TO N%
-9130 PRINT "   " M " - " NAMES$(M) " (" SIZES%(M,1) "x" SIZES%(M,2) ")"
-9140 NEXT M
-9150 PRINT:PRINT "Valitse kartta";
-9160 INPUT S%
-9170 W% = SIZES%(S%,1):H% = SIZES%(S%,2)
-9180 FOR ROW = 1 TO W%: FOR COL = 1 TO H%
-9190 MAP%(COL,ROW) = MD%(S%, COL,ROW)
-9200 NEXT COL: NEXT ROW
 9210 RETURN
 
 10000 REM Map data ====================
