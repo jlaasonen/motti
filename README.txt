@@ -9,7 +9,7 @@ Motituspeli is a strategy game inspired by the DOS game
 "Motti - The Game" by Pasi Fränti and Timo Kaukoranta [1].
 The game is intended for VTech Laser 2001 and Salora Manager
 home computers [2], but the current version also works with
-PC-BASIC [3].
+PC-BASIC [3] and QB64 [4].
 
 The goal of the game is to conquer territy and prevent
 the oppising player from making a move. The player's
@@ -23,3 +23,4 @@ claimed territory or territory adjecent to conquered territory.
 [1] https://archive.org/details/motti
 [2] http://www.madrigaldesign.it/creativemu/index.php
 [3] https://robhagemans.github.io/pcbasic/index.html
+[4] https://www.qb64.org/
