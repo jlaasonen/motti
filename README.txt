@@ -19,6 +19,9 @@ Free territory is green. The player can only conquer
 claimed territory or territory adjecent to conquered territory.
 The colour of the inner border indicates whose turn it is.
 
+The cursor is controlled with the keys W, A, S, and D.
+The territy to conquer is selected with the spacebar.
+
 
 [1] https://archive.org/details/motti
 [2] http://www.madrigaldesign.it/creativemu/index.php
