@@ -21,16 +21,17 @@
 210 GOSUB 9000
 220 P% = 1
 230 VP% = 2
+240 HOME
 
 300 REM Main menu =====================
-310 PRINT
+310 PRINT:PRINT:PRINT SPC(10) "Motituspeli":PRINT:PRINT
 320 FOR M = 1 TO N%
 330 PRINT SPC(4) M " - " NAMES$(M) " (" SIZES%(M,1) "x" SIZES%(M,2) ")"
 340 NEXT M
 350 PRINT SPC(4) "0 - Lopetus"
-360 PRINT:PRINT "Valitse kartta";
+360 PRINT:PRINT SPC(8) "Valitse kartta";
 370 INPUT S%
-380 IF S% = 0 THEN END
+380 IF S% = 0 THEN HOME:END
 390 W% = SIZES%(S%,1):H% = SIZES%(S%,2)
 400 FOR ROW = 1 TO W%: FOR COL = 1 TO H%
 410 MAP%(COL,ROW) = MD%(S%, COL,ROW)
