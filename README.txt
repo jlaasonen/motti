@@ -8,7 +8,8 @@ by Jussi Laasonen
 Motituspeli is a strategy game inspired by the DOS game 
 "Motti - The Game" by Pasi Fränti and Timo Kaukoranta [1].
 The game is intended for VTech Laser 2001 and Salora Manager
-home computers [2].
+home computers [2] and can be run on modern computers
+with creatiVision emulator [3].
 
 The goal of the game is to conquer territy and prevent
 the oppising player from making a move. The player's
@@ -25,3 +26,4 @@ The territy to conquer is selected with the spacebar.
 
 [1] https://archive.org/details/motti
 [2] http://www.madrigaldesign.it/creativemu/index.php
+[3] https://sourceforge.net/projects/creativisionemulator/
